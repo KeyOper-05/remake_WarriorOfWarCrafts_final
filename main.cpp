@@ -566,6 +566,9 @@ public:
 		}
 	}
 	void reset() {
+		for(auto city : Cities) {
+			delete city;
+		}
 		Cities.clear();
 		MHeadquarters.clear();
 	}
